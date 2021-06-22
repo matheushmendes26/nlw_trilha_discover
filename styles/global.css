@@ -1,0 +1,111 @@
+*{
+    margin:0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html{
+    --black: #0D114F;
+    --write: #FAFAFA;
+    --red: #E83F5B;
+    --lightBlue:#E0ECFF;
+    --blue:#3485FF;
+    --background:#FBFCFF;
+    --overlay: #040911;
+    --iconsDetails:#A5B0C1;
+
+    --darkGrey:#4D5E77;
+    --blueGrey:#A1B2CD;
+    --mediumGrey:#D3D9E2;
+    --lightGrey:#E5EAF1;
+
+    --hoverBlue:#5699FF;
+    --hoverRed:#EA4B65;
+    --hoverGrey:#8794A7;
+
+    /* 1rem = 16px (User Agent) = 100% */
+     font-size: 62.5%;
+}
+
+body{
+    display: flex;
+    height: 100vh; /*View height*/
+    background: var(--background);
+
+}
+
+body,button,input,textarea{
+    font-size: clamp(14px,1.6rem,2vw); /*Intervalo de tamanho*/
+    font-family: 'Open Sans', sans-serif; 
+    /*font-family: 'Poppins', sans-serif;*/
+}
+
+.content{
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.sr-only{
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: rect(0,0,0,0);
+    border-width: 0;
+}
+/* input and buttons*/
+
+button, input, .button{
+    border-radius: 0.8rem;
+    height: 5rem;
+}
+
+button, .button{
+
+    font-family: 'Poppins';
+    font-weight: 500;
+    line-height: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--blue);
+
+    transition: 0.2s;
+    
+    color: var(--write);
+    cursor: pointer;
+
+}
+
+button:hover, .button:hover{
+    filter:brightness(1.2);
+}
+
+button > img .button > img{
+    margin-right: 1rem;
+    width: 2rem;
+}
+button.outlined, .button.outlined{
+    background: var(--write);
+    color: var(--blue);
+    border: .2rem solid var(--blue);
+
+}
+
+.content header{
+    width: 80%;
+    margin: 3.5rem auto;
+}
+
+.content header img{
+    width: 16.7rem;
+
+
+}
+
