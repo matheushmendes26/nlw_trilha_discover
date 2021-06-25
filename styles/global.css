@@ -16,6 +16,7 @@ html{
     --overlay: #040911;
     --icons-details: #A5B0C1;
 
+    --grey-modify:#EAECF2;
     --grey-dark: #4D5E77;
     --grey-blue: #A1B2CD;
     --grey-light:#E5EAF1;
@@ -83,7 +84,7 @@ button:hover, .button:hover{
     filter: brightness(1.2);
 }
 
-button > img
+button > img,
 .button > img{
     margin-right: 1rem;
     width: 2rem;
@@ -95,6 +96,20 @@ button.outlined,
     color: var(--blue);
     border: .2rem solid var(--blue);
 }
+
+button.red, .button .red{
+    background: var(--red);
+    color: var(--white)
+
+}
+
+button.grey, .button.grey{
+    background: var(--grey-light);
+    color: var(--grey-dark);
+
+}
+
+
 
 .content header{
     width: 80%;  
